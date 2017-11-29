@@ -1,0 +1,274 @@
+/* 重置样式 start */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body, button, input, select, textarea {
+  font: 12px/1.5 "Microsoft Yahei", Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+img, input {
+  border: 0 none;
+}
+
+
+/* 重置样式 end */
+
+
+/* 公用样式 start */
+
+.inner {
+  position: relative;
+  width: 1260px;
+  margin: 0 auto;
+}
+
+
+/* 公用样式 end */
+
+.banner {
+  position: relative;
+  min-width: 1300px;
+  height: 640px;
+  background: url('../img/banner.jpg') no-repeat center top / 100%;
+  .top-bar {
+    overflow: hidden;
+  }
+  .top-bar h1 {
+    overflow: hidden;
+    float: left;
+    width: 39px;
+    height: 23px;
+    margin-top: 19px;
+    text-indent: 10000px;
+  }
+  .top-bar h1 img {
+    display: block;
+    width: 100%;
+  }
+  .top-bar .nav {
+    float: right;
+    /* width: 320px; */
+  }
+  .top-bar .nav li {
+    float: left;
+    width: 80px;
+    margin-top: 20px;
+  }
+  .top-bar .nav li a {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .iphone {
+    position: absolute;
+    top: 115px;
+    left: 374px;
+    overflow: hidden;
+    width: 198px;
+    height: 397px;
+    background: url('../img/iphone7p.png') no-repeat center center / 100%;
+  }
+  .iphone video {
+    width: 172px;
+    height: 306px;
+    margin-top: 44px;
+    margin-left: 13px;
+  }
+  .word {
+    position: absolute;
+    top: 215px;
+    left: 700px;
+    color: #ffffff;
+  }
+  .word .title {
+    font-size: 44px;
+  }
+  .word .content {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .download {
+    display: block;
+    width: 147px;
+    height: 39px;
+    margin-top: 85px;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    background: #454545 url('../img/apple.png') no-repeat 17px center / 16px;
+    outline: none;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 39px;
+    text-align: left;
+    text-indent: 50px;
+  }
+}
+
+.passing {
+  overflow: hidden;
+  min-width: 1300px;  
+  height: 500px;
+  background: #ffffff;
+  .word {
+    float: left;
+    width: 545px;
+    text-align: right;
+  }
+  .title {
+    margin-top: 170px;
+    font-size: 36px;
+    color: #4d4d4d;
+  }
+  .content {
+    font-size: 16px;
+    color: #909090;
+  }
+  .line1 {
+    margin-top: 50px;
+  }
+  .line2 {
+    margin-top: 10px;
+  }
+  img {
+    display: block;
+    width: 361px;
+    margin-top: 40px;
+    margin-left: 735px;
+  }
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url('../img/bg.jpg') no-repeat center center / 100% 100%;
+}
+
+.transparent {
+  min-width: 1300px;  
+  height: 500px;
+  background: transparent;
+  .word {
+    text-align: center;
+    color: #ffffff;
+  }
+  .title {
+    padding-top: 105px;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  .content {
+    padding-top: 30px;
+    font-size: 16px;
+  }
+}
+
+.scene {
+  position: relative;
+  min-width: 1300px;
+  height: 500px;
+  background: #ffffff;
+  img {
+    position: absolute;
+    top: 0;
+    right: 494px;
+    height: 500px;
+  }
+  .word {
+    margin-left: 835px;
+  }
+  .title {
+    padding-top: 130px;
+    font-size: 36px;
+    color: #4d4d4d;
+  }
+  .content {
+    margin-top: 50px;
+    font-size: 16px;
+    color: #909090;
+  }
+}
+
+.footer {
+  min-width: 1300px;  
+  height: 155px;
+  background: #b7b7b7;
+}
+
+@media screen and (min-width: 1772px) {
+  .inner {
+    width: 1770px;
+  }
+  .banner {
+    height: 900px;
+  }
+  .top-bar h1 {
+    width: 55px;
+    height: 32px;
+    margin-top: 26px;
+  }
+  .top-bar .nav li {
+    width: 112px;
+    margin-top: 30px;
+  }
+  .top-bar .nav li a {
+    font-size: 18px;
+  }
+  .banner .iphone {
+    top: 155px;
+    left: 423px;
+    width: 282px;
+    height: 566px;
+  }
+  .banner .iphone video {
+    width: 245px;
+    height: 436px;
+    margin-top: 64px;
+    margin-left: 18px;
+  }
+  .banner .word {
+    top: 305px;
+    left: 925px;
+  }
+  .banner .word .title {
+    font-size: 62px;
+  }
+  .banner .word .content {
+    font-size: 40px;
+  }
+  .banner .download {
+    margin-top: 125px;
+    width: 210px;
+    height: 58px;
+    border-radius: 10px;
+    line-height: 58px;
+    text-indent: 70px;
+    font-size: 26px;
+    background-position: 25px center;
+    background-size: 23px;
+  }
+}
