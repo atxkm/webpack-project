@@ -32,7 +32,7 @@ let webpackConfig = {
     output: {
         filename: 'js/[name].js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: 'http://localhost:8080/'
+        publicPath: '/'
     },
     // devtool: 'inline-source-map',
     devServer: {
