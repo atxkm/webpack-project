@@ -1,0 +1,117 @@
+/* 重置样式 start */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 "Microsoft Yahei", Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+img, input {
+    border: 0 none;
+}
+
+
+/* 重置样式 end */
+
+
+/* 公用样式 start */
+
+.inner {
+    position: relative;
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.min-width {
+    min-width: 1260px;
+}
+
+.banner {
+    position: relative;
+    height: 640px;
+    .top-bar {
+        h1 {
+            float: left;
+            width: 39px;
+            height: 23px;
+            margin-top: 19px;
+            a {
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .nav {
+            float: right;
+            li {
+                float: left;
+                width: 80px;
+                margin-top: 20px;
+                text-align: center;
+                a {
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    height: 160px;
+    background: #b7b7b7;
+}
+
+@media screen and (min-width: 1790px) {
+    .inner {
+        width: 1770px;
+    }
+    .banner {
+        height: 900px;
+        .top-bar {
+            h1 {
+                width: 55px;
+                height: 32px;
+                margin-top: 26px;
+            }
+            .nav {
+                li {
+                    width: 112px;
+                    margin-top: 30px;
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        height: 222px;
+    }
+}
+
+
+/* 公用样式 end */

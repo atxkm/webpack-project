@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open",
     "build": "webpack"
   },
   "keywords": [
@@ -19,6 +19,7 @@
     "css-loader": "0.28.7",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
+    "html-loader": "0.5.1",
     "html-webpack-plugin": "2.30.1",
     "html-withimg-loader": "0.1.16",
     "node-sass": "4.7.2",

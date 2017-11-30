@@ -1,84 +1,9 @@
-/* 重置样式 start */
-
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td {
-    margin: 0;
-    padding: 0;
+body {
+    background: url('img/bg.jpg') no-repeat fixed center center / cover;
 }
-
-ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-body, button, input, select, textarea {
-    font: 12px/1.5 "Microsoft Yahei", Helvetica Neue, Helvetica, STHeiTi, sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-}
-
-address, cite, dfn, em, var {
-    font-style: normal;
-}
-
-img, input {
-    border: 0 none;
-}
-
-
-/* 重置样式 end */
-
-
-/* 公用样式 start */
-
-.inner {
-    position: relative;
-    width: 1260px;
-    margin: 0 auto;
-}
-
-
-/* 公用样式 end */
 
 .banner {
-    position: relative;
-    min-width: 1300px;
-    height: 640px;
-    background: url('../img/banner.jpg') no-repeat center top / 100%;
-    .top-bar {
-        h1 {
-            float: left;
-            width: 39px;
-            height: 23px;
-            margin-top: 19px;
-            a {
-                img {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
-        .nav {
-            float: right;
-            li {
-                float: left;
-                width: 80px;
-                margin-top: 20px;
-                text-align: center;
-                a {
-                    font-size: 14px;
-                    color: #ffffff;
-                }
-            }
-        }
-    }
+    background: url('img/banner.jpg') no-repeat center center / cover;
     .iphone {
         position: absolute;
         top: 115px;
@@ -86,7 +11,7 @@ img, input {
         overflow: hidden;
         width: 198px;
         height: 397px;
-        background: url('../img/iphone7p.png') no-repeat center center / 100%;
+        background: url('img/iphone7p.png') no-repeat center center / 100%;
         video {
             width: 172px;
             height: 306px;
@@ -114,7 +39,7 @@ img, input {
         margin-top: 85px;
         border: 1px solid #c8c8c8;
         border-radius: 5px;
-        background: #454545 url('../img/apple.png') no-repeat 17px center / 16px;
+        background: #454545 url('img/apple.png') no-repeat 17px center / 16px;
         outline: none;
         font-size: 18px;
         color: #ffffff;
@@ -126,7 +51,6 @@ img, input {
 
 .passing {
     overflow: hidden;
-    min-width: 1300px;
     height: 500px;
     background: #ffffff;
     .word {
@@ -164,11 +88,10 @@ img, input {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: url('../img/bg.jpg') no-repeat center center / 100% 100%;
+    background: url('img/bg.jpg') no-repeat center center / 100% 100%;
 }
 
 .transparent {
-    min-width: 1300px;
     height: 500px;
     background: transparent;
     .word {
@@ -188,7 +111,6 @@ img, input {
 
 .scene {
     position: relative;
-    min-width: 1300px;
     height: 500px;
     background: #ffffff;
     img {
@@ -215,35 +137,8 @@ img, input {
     }
 }
 
-.footer {
-    min-width: 1300px;
-    height: 155px;
-    background: #b7b7b7;
-}
-
-@media screen and (min-width: 1772px) {
-    .inner {
-        width: 1770px;
-    }
+@media screen and (min-width: 1790px) {
     .banner {
-        min-width: 1860px;
-        height: 900px;
-        .top-bar {
-            h1 {
-                width: 55px;
-                height: 32px;
-                margin-top: 26px;
-            }
-            .nav {
-                li {
-                    width: 112px;
-                    margin-top: 30px;
-                    a {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
         .iphone {
             top: 155px;
             left: 423px;
@@ -333,8 +228,5 @@ img, input {
                 }
             }
         }
-    }
-    .footer {
-        height: 222px;
     }
 }

@@ -1,0 +1,112 @@
+body {
+    background: url('../../img/bg2.jpg') no-repeat fixed center center / cover;
+}
+
+.banner {
+    background: url('../../img/banner2.jpg') no-repeat center center / cover;
+    .word {
+        padding-top: 230px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 58px;
+    }
+}
+
+.desc {
+    height: 500px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    color: #959595;
+    .line1 {
+        padding-top: 180px;
+    }
+    .line2 {
+        padding-top: 25px;
+    }
+}
+
+.transparent {
+    height: 500px;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1;
+    .line1 {
+        padding-top: 225px;
+    }
+    .line2 {
+        padding-top: 15px;
+    }
+}
+
+.scene {
+    position: relative;
+    height: 500px;
+    background: #ffffff;
+    img {
+        position: absolute;
+        top: 0;
+        right: 494px;
+        height: 500px;
+    }
+    .word {
+        margin-left: 835px;
+        line-height: 1;
+        color: #909090;
+        font-size: 16px;
+        .line1 {
+            padding-top: 150px;
+        }
+        .line2 {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1790px) {
+    .banner {
+        .word {
+            padding-top: 310px;
+            font-size: 82px;
+        }
+    }
+    .desc {
+        height: 700px;
+        font-size: 22px;
+        .line1 {
+            padding-top: 250px;
+        }
+        .line2 {
+            padding-top: 35px;
+        }
+    }
+    .transparent {
+        height: 700px;
+        font-size: 22px;
+        .line1 {
+            padding-top: 310px;
+        }
+        .line2 {
+            padding-top: 20px;
+        }
+    }
+    .scene {
+        height: 700px;
+        img {
+            right: 693px;
+            height: 700px;
+        }
+        .word {
+            margin-left: 1178px;
+            font-size: 22px;
+            .line1{
+                padding-top: 200px;                
+            }
+            .line2 {
+                margin-top: 20px;
+            }
+        }
+    }
+}
