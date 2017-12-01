@@ -52,6 +52,7 @@ img, input {
     position: relative;
     height: 640px;
     .top-bar {
+        height: 50px;
         h1 {
             float: left;
             width: 39px;
@@ -81,6 +82,7 @@ img, input {
 }
 
 .footer {
+    overflow: hidden;
     height: 160px;
     background: #b7b7b7;
 }
@@ -92,6 +94,7 @@ img, input {
     .banner {
         height: 900px;
         .top-bar {
+            height: 60px;
             h1 {
                 width: 55px;
                 height: 32px;

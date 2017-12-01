@@ -5,10 +5,61 @@ body {
 .banner {
     background: url('../../img/banner2.jpg') no-repeat center center / cover;
     .word {
-        padding-top: 230px;
-        text-align: center;
+        float: left;
+        width: 480px;
+        padding-top: 90px;
+        text-align: right;
         color: #ffffff;
-        font-size: 58px;
+        line-height: 1;
+        .title {
+            font-size: 44px;
+        }
+        .tip {
+            margin-top: 12px;
+            line-height: 30px;
+            font-size: 18px;
+            color: #7498b8;
+        }
+        .content {
+            float: right;
+            margin-top: 50px;
+            width: 265px;
+            line-height: 20px;
+            text-align: left;
+            font-size: 12px;
+            color: #ffffff;
+            .last-line {
+                text-align: right;
+            }
+        }
+        .look {
+            display: block;
+            clear: both;
+            padding-top: 14px;
+            font-size: 16px;   
+            color: #f62656;
+        }
+        .download {
+            clear: both;
+            float: right;
+            width: 147px;
+            height: 39px;
+            margin-top: 30px;
+            border: 1px solid #c8c8c8;
+            border-radius: 5px;
+            background: #454545;
+            outline: none;
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 39px;
+            text-align: center;
+        }
+    }
+    .tool {
+        display: block;
+        width: 504px;
+        margin-top: 90px;
+        margin-left: 560px;
     }
 }
 
@@ -65,11 +116,60 @@ body {
     }
 }
 
+.footer {
+    .apply {
+        display: block;
+        width: 213px;
+        height: 57px;
+        margin: 40px auto 0;
+        border-radius: 5px;
+        background: #ffffff;
+        text-align: center;
+        line-height: 57px;
+        font-size: 20px;
+        color: #fc9b64;
+    }
+}
+
 @media screen and (min-width: 1790px) {
     .banner {
         .word {
-            padding-top: 310px;
-            font-size: 82px;
+            width: 680px;
+            padding-top: 140px;
+            .title {
+                font-size: 60px;
+            }
+            .tip {
+                margin-top: 18px;
+                line-height: 40px;
+                font-size: 26px;
+            }
+            .content {
+                float: right;
+                margin-top: 11px;
+                width: 375px;
+                line-height: 30px;
+                text-align: left;
+                font-size: 17px;
+                color: #ffffff;
+            }
+            .look {
+                margin-top: 18px;
+                font-size: 22px;
+            }
+            .download {
+                width: 208px;
+                height: 56px;
+                margin-top: 45px;
+                border-radius: 10px;
+                font-size: 26px;
+                line-height: 56px;
+            }
+        }
+        .tool {
+            width: 708px;
+            margin-top: 140px;
+            margin-left: 780px;
         }
     }
     .desc {
@@ -101,12 +201,22 @@ body {
         .word {
             margin-left: 1178px;
             font-size: 22px;
-            .line1{
-                padding-top: 200px;                
+            .line1 {
+                padding-top: 200px;
             }
             .line2 {
                 margin-top: 20px;
             }
+        }
+    }
+    .footer {
+        .apply {
+            width: 300px;
+            height: 80px;
+            margin: 55px auto 0;
+            border-radius: 10px;
+            line-height: 80px;
+            font-size: 28px;
         }
     }
 }
