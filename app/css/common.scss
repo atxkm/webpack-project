@@ -81,9 +81,22 @@ img, input {
     }
 }
 
+.scene {
+    position: relative;
+    background: #ffffff;
+    img {
+        display: block;
+        width: 60%;
+    }
+    .word {
+        position: absolute;
+        left: 65%;
+    }
+}
+
 .footer {
     overflow: hidden;
-    height: 160px;
+    height: 80px;
     background: #b7b7b7;
 }
 
@@ -112,7 +125,7 @@ img, input {
         }
     }
     .footer {
-        height: 222px;
+        height: 111px;
     }
 }
 

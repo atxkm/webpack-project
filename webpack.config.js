@@ -37,7 +37,7 @@ let webpackConfig = {
     // devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
-        host: 'localhost'
+        host: '0.0.0.0'
     },
     module: {
         rules: [{

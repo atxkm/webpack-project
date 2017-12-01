@@ -110,19 +110,9 @@ body {
 }
 
 .scene {
-    position: relative;
-    height: 500px;
-    background: #ffffff;
-    img {
-        position: absolute;
-        top: 0;
-        right: 494px;
-        height: 500px;
-    }
     .word {
-        margin-left: 835px;
+        top: 25%;        
         .title {
-            padding-top: 130px;
             font-size: 36px;
             color: #4d4d4d;
         }
@@ -209,19 +199,11 @@ body {
         }
     }
     .scene {
-        height: 700px;
-        img {
-            right: 693px;
-            height: 700px;
-        }
         .word {
-            margin-left: 1173px;
             .title {
-                padding-top: 183px;
                 font-size: 50px;
             }
             .content {
-                margin-top: 65px;
                 font-size: 22px;
                 .line2 {
                     margin-top: 20px;

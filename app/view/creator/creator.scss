@@ -36,7 +36,7 @@ body {
             display: block;
             clear: both;
             padding-top: 14px;
-            font-size: 16px;   
+            font-size: 16px;
             color: #f62656;
         }
         .download {
@@ -93,43 +93,18 @@ body {
 }
 
 .scene {
-    position: relative;
-    height: 500px;
-    background: #ffffff;
-    img {
-        position: absolute;
-        top: 0;
-        right: 494px;
-        height: 500px;
-    }
     .word {
-        margin-left: 835px;
+        top: 28%;
         line-height: 1;
         color: #909090;
         font-size: 16px;
-        .line1 {
-            padding-top: 150px;
-        }
         .line2 {
             margin-top: 15px;
         }
     }
 }
 
-.footer {
-    .apply {
-        display: block;
-        width: 213px;
-        height: 57px;
-        margin: 40px auto 0;
-        border-radius: 5px;
-        background: #ffffff;
-        text-align: center;
-        line-height: 57px;
-        font-size: 20px;
-        color: #fc9b64;
-    }
-}
+.footer {}
 
 @media screen and (min-width: 1790px) {
     .banner {
@@ -193,17 +168,8 @@ body {
         }
     }
     .scene {
-        height: 700px;
-        img {
-            right: 693px;
-            height: 700px;
-        }
         .word {
-            margin-left: 1178px;
             font-size: 22px;
-            .line1 {
-                padding-top: 200px;
-            }
             .line2 {
                 margin-top: 20px;
             }
