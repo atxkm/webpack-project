@@ -33,26 +33,97 @@ body {
             }
         }
         .look {
-            display: block;
+            float: right;
             clear: both;
             padding-top: 14px;
             font-size: 16px;
             color: #f62656;
         }
-        .download {
-            clear: both;
+        .download-wrap {
             float: right;
-            width: 147px;
-            height: 39px;
-            margin-top: 25px;
-            border: 1px solid #c8c8c8;
-            border-radius: 5px;
-            background: #454545;
-            outline: none;
-            font-size: 18px;
-            color: #ffffff;
-            line-height: 39px;
-            text-align: center;
+            clear: both;
+            margin-top: 30px;
+            .download {
+                float: right;
+                height: 30px;
+                border: 1px solid #c8c8c8;
+                border-radius: 5px;
+                background: #454545;
+                outline: none;
+                font-size: 14px;
+                color: #ffffff;
+                line-height: 30px;
+                &.download1 {
+                    width: 104px;
+                    margin-right: 20px;
+                    text-align: center;
+                }
+                &.download2 {
+                    position: relative;
+                    width: 134px;
+                    text-align: left;
+                    text-indent: 18px;
+                    cursor: pointer;
+                    &::after {
+                        position: absolute;
+                        top: 14px;
+                        right: 16px;
+                        border: 4px solid transparent;
+                        border-top: 4px solid #ffffff;
+                        transform: rotateZ(-180deg);
+                        transform-origin: 50% 2px;
+                        transition: all .3s;
+                        content: '';
+                    }
+                    &:hover {
+                        ul {
+                            height: 120px;
+                        }
+                        &::after {
+                            transform: rotateZ(0);
+                        }
+                    }
+                    ul {
+                        height: 0;
+                        overflow: hidden;
+                        padding-top: 10px;
+                        text-align: center;
+                        text-indent: 0;
+                        transition: all .3s;
+                        font-size: 12px;
+                        li {
+                            position: relative;
+                            overflow: hidden;
+                            line-height: 40px;
+                            background: #ffffff;
+                            &:hover {
+                                font-size: 13px;
+                            }
+                            &:active {
+                                font-size: 12px;                                    
+                            }
+                            &:first-child {
+                                border-top-left-radius: 6px;
+                                border-top-right-radius: 6px;
+                            }
+                            &:last-child {
+                                border-bottom-left-radius: 6px;
+                                border-bottom-right-radius: 6px;
+                            }
+                            &::after {
+                                position: absolute;
+                                left: 50%;
+                                bottom: 0;
+                                width: 170px;
+                                height: 1px;
+                                margin-left: -85px;
+                                background: #eeeeee;
+                                content: '';
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .tool {
@@ -134,16 +205,49 @@ body {
                 color: #ffffff;
             }
             .look {
-                margin-top: 18px;
+                padding-top: 20px;
                 font-size: 22px;
             }
-            .download {
-                width: 208px;
-                height: 56px;
+            .download-wrap {
                 margin-top: 45px;
-                border-radius: 10px;
-                font-size: 26px;
-                line-height: 56px;
+                .download {
+                    height: 45px;
+                    border-radius: 10px;
+                    line-height: 45px;
+                    font-size: 20px;
+                    &.download1 {
+                        width: 147px;
+                        margin-right: 35px;
+                    }
+                    &.download2 {
+                        width: 185px;
+                        text-indent: 23px;
+                        ul {
+                            li {
+                                line-height: 50px;
+                                font-size: 16px;
+                                &:hover {
+                                    font-size: 17px;
+                                }
+                                &:active {
+                                    font-size: 16px;                                    
+                                }
+                            }
+                        }
+                        &::after {
+                            top: 22px;
+                            right: 20px;
+                            border: 6px solid transparent;
+                            border-top: 6px solid #ffffff;
+                            transform-origin: 50% 3px;
+                        }
+                        &:hover {
+                            ul {
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
             }
         }
         .tool {
