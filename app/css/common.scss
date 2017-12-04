@@ -95,9 +95,45 @@ img, input {
 }
 
 .footer {
+    position: relative;
     overflow: hidden;
-    height: 80px;
     background: #b7b7b7;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    .info {
+        div:nth-child(1) {
+            padding-top: 40px;
+        }
+        div:nth-child(2) {
+            margin-top: 5px;
+        }
+        div:nth-child(3) {
+            margin-top: 10px;
+            padding-bottom: 35px;
+        }
+    }
+    .qr-wrap {
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        margin-left: -545px;
+        div {
+            float: left;
+            width: 85px;
+            margin-right: 15px;
+            img {
+                display: block;
+                width: 76px;
+                margin: 0 auto;
+            }
+            span {
+                display: block;
+                margin-top: 2px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1790px) {
@@ -125,7 +161,35 @@ img, input {
         }
     }
     .footer {
-        height: 111px;
+        .info {
+            font-size: 16px;
+            div:nth-child(1) {
+                padding-top: 35px;
+            }
+            div:nth-child(2) {
+                margin-top: 10px;
+            }
+            div:nth-child(3) {
+                margin-top: 15px;
+                padding-bottom: 40px;
+            }
+        }
+        .qr-wrap {
+            top: 30px;
+            left: 50%;
+            margin-left: -765px;
+            div {
+                width: 85px;
+                margin-right: 20px;
+                img {
+                    width: 76px;
+                }
+                span {
+                    display: block;
+                    margin-top: 2px;
+                }
+            }
+        }
     }
 }
 

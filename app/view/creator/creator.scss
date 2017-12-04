@@ -7,7 +7,7 @@ body {
     .word {
         float: left;
         width: 480px;
-        padding-top: 90px;
+        padding-top: 88px;
         text-align: right;
         color: #ffffff;
         line-height: 1;
@@ -22,7 +22,7 @@ body {
         }
         .content {
             float: right;
-            margin-top: 50px;
+            margin-top: 16px;
             width: 265px;
             line-height: 20px;
             text-align: left;
@@ -44,7 +44,7 @@ body {
             float: right;
             width: 147px;
             height: 39px;
-            margin-top: 30px;
+            margin-top: 25px;
             border: 1px solid #c8c8c8;
             border-radius: 5px;
             background: #454545;
@@ -67,6 +67,9 @@ body {
     height: 500px;
     background: #ffffff;
     text-align: center;
+    line-height: 1;
+    font-weight: lighter;
+    letter-spacing: 1px;
     font-size: 16px;
     color: #959595;
     .line1 {
@@ -81,9 +84,11 @@ body {
     height: 500px;
     background: transparent;
     text-align: center;
+    line-height: 1;
+    font-weight: lighter;
+    letter-spacing: 1px;
     color: #ffffff;
     font-size: 16px;
-    line-height: 1;
     .line1 {
         padding-top: 225px;
     }
@@ -93,9 +98,11 @@ body {
 }
 
 .scene {
+    line-height: 1;
+    font-weight: lighter;
+    letter-spacing: 1px;
     .word {
         top: 28%;
-        line-height: 1;
         color: #909090;
         font-size: 16px;
         .line2 {
@@ -103,8 +110,6 @@ body {
         }
     }
 }
-
-.footer {}
 
 @media screen and (min-width: 1790px) {
     .banner {
@@ -149,7 +154,7 @@ body {
     }
     .desc {
         height: 700px;
-        font-size: 22px;
+        font-size: 16px;
         .line1 {
             padding-top: 250px;
         }
@@ -159,7 +164,7 @@ body {
     }
     .transparent {
         height: 700px;
-        font-size: 22px;
+        font-size: 16px;
         .line1 {
             padding-top: 310px;
         }
@@ -169,7 +174,7 @@ body {
     }
     .scene {
         .word {
-            font-size: 22px;
+            font-size: 16px;
             .line2 {
                 margin-top: 20px;
             }

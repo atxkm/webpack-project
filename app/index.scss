@@ -21,42 +21,123 @@ body {
     }
     .word {
         position: absolute;
-        top: 215px;
+        top: 160px;
         left: 700px;
         color: #ffffff;
+        line-height: 1;
         .title {
             font-size: 44px;
+        }
+        .beta {
+            position: absolute;
+            top: 5px;
+            left: 130px;
+            width: 80px;
+            height: 20px;
+            border-radius: 5px;
+            line-height: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, .5);
+            &::after {
+                position: absolute;
+                bottom: -12px;
+                right: 10px;
+                border: 6px solid transparent;
+                border-top: 6px solid rgba(0, 0, 0, .5);
+                content: '';
+            }
         }
         .content {
             margin-top: 20px;
             font-size: 30px;
         }
-    }
-    .download {
-        display: block;
-        width: 147px;
-        height: 39px;
-        margin-top: 85px;
-        border: 1px solid #c8c8c8;
-        border-radius: 5px;
-        background: #454545 url('img/apple.png') no-repeat 17px center / 16px;
-        outline: none;
-        font-size: 18px;
-        color: #ffffff;
-        line-height: 39px;
-        text-align: left;
-        text-indent: 50px;
+        .download-wrap {
+            margin-top: 90px;
+            .download {
+                position: relative;
+                display: block;
+                overflow: hidden;
+                width: 183px;
+                height: 35px;
+                outline: none;
+                border: 1px solid #c8c8c8;
+                border-radius: 5px;
+                line-height: 35px;
+                font-weight: lighter;
+                font-size: 18px;
+                text-align: left;
+                color: #ffffff;
+                &.ios {
+                    background: #454545 url('img/apple.png') no-repeat 10px center / 21px;
+                    text-indent: 65px;
+                }
+                &.android {
+                    margin-top: 15px;
+                    background: #67a628 url('img/android.png') no-repeat 10px center / 21px;
+                    text-indent: 44px;
+                }
+                .qr-wrap {
+                    position: absolute;
+                    top: 50%;
+                    right: -165px;
+                    opacity: 0;
+                    width: 110px;
+                    height: 110px;
+                    margin-top: -63px;
+                    border: 8px solid #ffffff;
+                    border-radius: 8px;
+                    &::after {
+                        display: block;
+                        position: absolute;
+                        left: -24px;
+                        top: 50%;
+                        margin-top: -8px;
+                        border: 8px solid transparent;
+                        border-right: 8px solid #ffffff;
+                        content: '';
+                    }
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                &:hover {
+                    overflow: visible;
+                    .qr-wrap {
+                        opacity: 1;
+                        right: -145px;
+                        transition: all .3s;
+                    }
+                }
+            }
+            .tip {
+                font-size: 12px;
+                color: #ffffff;
+                letter-spacing: 0.25px;
+                div:nth-child(1) {
+                    margin-top: 15px;
+                }
+                div:nth-child(2) {
+                    margin-top: 5px;
+                }
+            }
+        }
     }
 }
 
 .passing {
-    overflow: hidden;
     height: 500px;
     background: #ffffff;
+    .inner {
+        overflow: hidden;
+    }
     .word {
         float: left;
         width: 545px;
         text-align: right;
+        line-height: 1;
+        font-weight: lighter;
+        letter-spacing: 1px;
         .title {
             margin-top: 170px;
             font-size: 36px;
@@ -81,25 +162,17 @@ body {
     }
 }
 
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: url('img/bg.jpg') no-repeat center center / 100% 100%;
-}
-
 .transparent {
     height: 500px;
     background: transparent;
+    line-height: 1;
+    font-weight: lighter;
+    letter-spacing: 1px;
     .word {
         text-align: center;
         color: #ffffff;
         .title {
             padding-top: 105px;
-            font-weight: bold;
             font-size: 36px;
         }
         .content {
@@ -110,8 +183,11 @@ body {
 }
 
 .scene {
+    line-height: 1;
+    font-weight: lighter;
+    letter-spacing: 1px;
     .word {
-        top: 25%;        
+        top: 25%;
         .title {
             font-size: 36px;
             color: #4d4d4d;
@@ -129,9 +205,10 @@ body {
 
 @media screen and (min-width: 1790px) {
     .banner {
+        line-height: 1;
         .iphone {
             top: 155px;
-            left: 423px;
+            left: 475px;
             width: 282px;
             height: 566px;
             video {
@@ -142,25 +219,80 @@ body {
             }
         }
         .word {
-            top: 305px;
-            left: 925px;
+            top: 240px;
+            left: 910px;
             .title {
                 font-size: 62px;
+            }
+            .beta {
+                top: 10px;
+                left: 190px;
+                width: 100px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 10px;
+                &::after {
+                    right: 16px;
+                    bottom: -16px;
+                    border: 8px solid transparent;
+                    border-top: 8px solid rgba(0, 0, 0, .5);
+                }
             }
             .content {
                 font-size: 40px;
             }
-        }
-        .download {
-            margin-top: 125px;
-            width: 210px;
-            height: 58px;
-            border-radius: 10px;
-            line-height: 58px;
-            text-indent: 70px;
-            font-size: 26px;
-            background-position: 25px center;
-            background-size: 23px;
+            .download-wrap {
+                margin-top: 140px;
+                .download {
+                    width: 257px;
+                    height: 50px;
+                    border-radius: 10px;
+                    line-height: 50px;
+                    text-indent: 55px;
+                    font-size: 22px;
+                    background-position: 15px center;
+                    background-size: 25px;
+                    &.ios {
+                        background: #454545 url('img/apple.png') no-repeat 13px center / 30px;
+                        text-indent: 94px;
+                    }
+                    &.android {
+                        background: #67a628 url('img/android.png') no-repeat 13px center / 30px;
+                        text-indent: 60px;
+                    }
+                    .qr-wrap {
+                        top: 50%;
+                        right: -240px;
+                        width: 154px;
+                        height: 154px;
+                        margin-top: -87px;
+                        border: 10px solid #ffffff;
+                        border-radius: 10px;
+                        &::after {
+                            left: -40px;
+                            margin-top: -16px;
+                            border: 16px solid transparent;
+                            border-right: 16px solid #ffffff;
+                        }
+                    }
+                    &:hover {
+                        .qr-wrap {
+                            right: -200px;
+                        }
+                    }
+                }
+                .tip {
+                    font-size: 14px;
+                    letter-spacing: 2.5px;
+                    div:nth-child(1) {
+                        margin-top: 20px;
+                    }
+                    div:nth-child(2) {
+                        margin-top: 10px;
+                    }
+                }
+            }
         }
     }
     .passing {
@@ -168,11 +300,11 @@ body {
         .word {
             width: 765px;
             .title {
-                font-size: 50px;
+                font-size: 40px;
                 margin-top: 245px;
             }
             .content {
-                font-size: 22px;
+                font-size: 16px;
                 .line1 {
                     margin-top: 65px;
                 }
@@ -191,20 +323,20 @@ body {
         .word {
             .title {
                 padding-top: 150px;
-                font-size: 50px;
+                font-size: 40px;
             }
             .content {
-                font-size: 22px;
+                font-size: 16px;
             }
         }
     }
     .scene {
         .word {
             .title {
-                font-size: 50px;
+                font-size: 40px;
             }
             .content {
-                font-size: 22px;
+                font-size: 16px;
                 .line2 {
                     margin-top: 20px;
                 }
