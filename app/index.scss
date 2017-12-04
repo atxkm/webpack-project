@@ -50,9 +50,13 @@ body {
         .content {
             margin-top: 20px;
             font-size: 30px;
+            font-weight: lighter;
+            .line2 {
+                margin-top: 10px;
+            }
         }
         .download-wrap {
-            margin-top: 90px;
+            margin-top: 70px;
             .download {
                 position: relative;
                 display: block;
@@ -174,10 +178,12 @@ body {
         .title {
             padding-top: 105px;
             font-size: 36px;
+            text-shadow: 0 0 30px #000000;
         }
         .content {
             padding-top: 30px;
             font-size: 16px;
+            text-shadow: 0 0 20px #000000;
         }
     }
 }
@@ -243,7 +249,7 @@ body {
                 font-size: 40px;
             }
             .download-wrap {
-                margin-top: 140px;
+                margin-top: 110px;
                 .download {
                     width: 257px;
                     height: 50px;
@@ -269,6 +275,7 @@ body {
                         margin-top: -87px;
                         border: 10px solid #ffffff;
                         border-radius: 10px;
+                        text-indent: 0;
                         &::after {
                             left: -40px;
                             margin-top: -16px;

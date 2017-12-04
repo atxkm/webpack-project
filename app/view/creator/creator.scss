@@ -15,19 +15,28 @@ body {
             font-size: 44px;
         }
         .tip {
+            overflow: hidden;
             margin-top: 12px;
             line-height: 30px;
             font-size: 18px;
             color: #7498b8;
+            .line2 {
+                float: right;
+                width: 266px;
+                text-align: justify;
+                text-align-last: justify;
+            }
         }
         .content {
             float: right;
             margin-top: 16px;
-            width: 265px;
-            line-height: 20px;
-            text-align: left;
+            width: 266px;
+            line-height: 18px;
             font-size: 12px;
+            text-align: left;
             color: #ffffff;
+            letter-spacing: 2.3px;
+            text-align: justify;
             .last-line {
                 text-align: right;
             }
@@ -42,7 +51,7 @@ body {
         .download-wrap {
             float: right;
             clear: both;
-            margin-top: 30px;
+            margin-top: 26px;
             .download {
                 float: right;
                 height: 30px;
@@ -73,6 +82,7 @@ body {
                         transform: rotateZ(-180deg);
                         transform-origin: 50% 2px;
                         transition: all .3s;
+                        text-indent: 0;
                         content: '';
                     }
                     &:hover {
@@ -100,7 +110,7 @@ body {
                                 font-size: 13px;
                             }
                             &:active {
-                                font-size: 12px;                                    
+                                font-size: 12px;
                             }
                             &:first-child {
                                 border-top-left-radius: 6px;
@@ -152,6 +162,7 @@ body {
 }
 
 .transparent {
+    position: relative;
     height: 500px;
     background: transparent;
     text-align: center;
@@ -165,6 +176,13 @@ body {
     }
     .line2 {
         padding-top: 15px;
+    }
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -20px;
+        margin-left: -35px;
     }
 }
 
@@ -194,22 +212,25 @@ body {
                 margin-top: 18px;
                 line-height: 40px;
                 font-size: 26px;
+                .line2 {
+                    width: 385px;
+                }
             }
             .content {
                 float: right;
                 margin-top: 11px;
-                width: 375px;
-                line-height: 30px;
-                text-align: left;
+                width: 385px;
+                letter-spacing: 4px;
+                line-height: 28px;
                 font-size: 17px;
                 color: #ffffff;
             }
             .look {
-                padding-top: 20px;
+                padding-top: 15px;
                 font-size: 22px;
             }
             .download-wrap {
-                margin-top: 45px;
+                margin-top: 35px;
                 .download {
                     height: 45px;
                     border-radius: 10px;
@@ -230,7 +251,7 @@ body {
                                     font-size: 17px;
                                 }
                                 &:active {
-                                    font-size: 16px;                                    
+                                    font-size: 16px;
                                 }
                             }
                         }
