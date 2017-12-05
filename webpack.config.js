@@ -112,6 +112,7 @@ let entries = {
   index: './app/index.ts',
   creator: './app/view/creator/creator.ts',
   about: './app/view/about/about.ts',
+  privacy: './app/view/privacy/privacy.ts',
   download: './app/app/download.ts',
 };
 

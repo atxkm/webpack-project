@@ -94,23 +94,33 @@ img, input {
 }
 
 .footer {
+    display: table;
     position: relative;
-    overflow: hidden;
+    width: 100%;
+    height: 125px;
     background: #b7b7b7;
     font-size: 12px;
     line-height: 1;
     text-align: center;
     color: #ffffff;
-    .info {
-        div:nth-child(1) {
-            padding-top: 40px;
-        }
-        div:nth-child(2) {
-            margin-top: 5px;
-        }
-        div:nth-child(3) {
-            margin-top: 10px;
-            padding-bottom: 35px;
+    .tab-cell {
+        display: table-cell;
+        vertical-align: middle;
+        .info {
+            div {
+                margin-top: 5px;
+                a {
+                    font-size: 12px;
+                    color: #ffffff;
+                    text-decoration: underline;
+                }
+            }
+            div:first-child {
+                margin-top: 0;
+            }
+            div:last-child {
+                margin-top: 10px;
+            }
         }
     }
     .qr-wrap {
@@ -159,23 +169,26 @@ img, input {
         }
     }
     .footer {
-        .info {
-            font-size: 16px;
-            div:nth-child(1) {
-                padding-top: 35px;
-            }
-            div:nth-child(2) {
-                margin-top: 10px;
-            }
-            div:nth-child(3) {
-                margin-top: 15px;
-                padding-bottom: 40px;
+        height: 150px;
+        font-size: 16px;
+        .tab-cell {
+            .info {
+                div {
+                    margin-top: 5px;
+                    a {
+                        font-size: 16px;
+                    }
+                }
+                div:last-child {
+                    margin-top: 10px;
+                }
             }
         }
         .qr-wrap {
             top: 30px;
             left: 50%;
             margin-left: -765px;
+            font-size: 12px;
             div {
                 width: 85px;
                 margin-right: 20px;
